@@ -1,13 +1,19 @@
 
 package com.portfolio.facudelu.Service;
 
+import com.portfolio.facudelu.Entity.Persona;
 import com.portfolio.facudelu.Interface.IPersonaService;
+import com.portfolio.facudelu.Repository.IPersonaRepository;
+
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
 public class ImpPersonaService implements IPersonaService{
-    @AutoWired IPersonaRepository ipersonaRepository;
+    @Autowired IPersonaRepository ipersonaRepository;
     
     @Override
     public List<Persona> getPersona() {
@@ -30,4 +36,5 @@ public class ImpPersonaService implements IPersonaService{
         Persona persona = ipersonaRepository.findById(id).orElse(null);
         return persona;
     }
+
 }

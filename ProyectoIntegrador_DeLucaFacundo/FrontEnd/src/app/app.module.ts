@@ -9,8 +9,9 @@ import { ExperienciaComponent } from './Components/experiencia/experiencia.compo
 import { EducacionComponent } from './Components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysSkillsComponent } from './Components/hys-skills/hys-skills.component';
-import { ProyectosComponent } from './components/proyectos/proyectos.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { ProyectosComponent } from './Components/proyectos/proyectos.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
