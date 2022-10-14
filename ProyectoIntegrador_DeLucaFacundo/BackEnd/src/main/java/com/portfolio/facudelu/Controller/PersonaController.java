@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.portfolio.facudelu.Entity.Persona;
 import com.portfolio.facudelu.Interface.IPersonaService;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
@@ -26,22 +27,24 @@ public class PersonaController {
     @GetMapping("/personas/traer")
     public List<Persona> getPersona(){
         return ipersonaService.getPersona();
-        
+    
     }
     
+    @PreAuthorize("hasrRole('ADMIN')")
     @PostMapping ("/personas/crear")
     public String createPersona(@RequestBody Persona persona) {
         ipersonaService.savePersona(persona);
         return "La persona fue creada correctamente";
     }
 
+    @PreAuthorize("hasrRole('ADMIN')")
     @DeleteMapping("/personas/borrar/{id}") 
     public String deletePersona(@PathVariable Long id) {
         ipersonaService.deletePersona(id);
         return "La persona fue eliminada correctamente";
     }
     
-    
+    @PreAuthorize("hasrRole('ADMIN')")
     @PutMapping("/personas/editar/{id}")
     public Persona editPersona(@PathVariable Long id,
                                 @RequestParam("nombre") String nuevoNombre,
