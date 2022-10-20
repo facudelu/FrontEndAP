@@ -15,7 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './Components/home/home.component';
 import { LoginComponent } from './Components/login/login.component';
 import { FormsModule } from '@angular/forms';
-import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './Components/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './Components/experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './Components/educacion/neweducacion.component';
@@ -49,7 +48,7 @@ import { EditeducacionComponent } from './Components/educacion/editeducacion.com
     FormsModule
   ],
   providers: [
-    interceptorProvider
+    
   ],
   bootstrap: [AppComponent]
 })
