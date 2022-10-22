@@ -7,7 +7,7 @@ import { Skills } from '../model/skills';
   providedIn: 'root'
 })
 export class SkillsService {
-  hysURL = 'http://localhost:8080/skills/';
+  hysURL = 'https://backendfacudelu.herokuapp.com/skills/';
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Skills[]> {
