@@ -1,1 +1,16 @@
-{}
+{
+  "hosting": {
+    "public": "dist/proyecto-integrador-de-luca-facundo",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 #logo-AP {
     width: 150px;
 }
-div {
+.logo {
     background-color: #2f3180;
 }
 #nav-bar {
@@ -14,6 +14,7 @@ div {
 }
 
 #redes-y-login {
+    background-color: #2f3180;
     margin: 10px;
 }
 
@@ -35,4 +36,8 @@ div {
     border-width: medium;
     font-weight: bold;
     margin: 5px;
+}
+
+.div-banner {
+    background-color: black;
 }
