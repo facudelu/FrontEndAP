@@ -2,14 +2,15 @@
     width: 150px;
 }
 div {
-    background-color: #667FFF;
+    background-color: #2f3180;
 }
 #nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #667FFF;
-    border-bottom: 10px solid #FFCC00;
+    background-color: #2f3180;
+    border-bottom: 10px solid #FFCF14;
+    
 }
 
 #redes-y-login {
@@ -28,7 +29,6 @@ div {
 
 #banner {
     width: 100%;
-    object-fit: cover;
 }
 
 .btn {

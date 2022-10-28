@@ -1,8 +1,8 @@
 .row {
-    background-color: #667FFF;
+    background-color: #f5efda;
     text-align-last: center;
 }
 footer {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 16px;
 }
