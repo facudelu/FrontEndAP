@@ -9,7 +9,7 @@ export class ImageService {
   constructor(private storage: Storage) { }
 
   public uploadImage($event: any, name: string) {
-    const file = $event.taget.files[0]
+    const file = $event.target.files[0]
     const imgRef = ref(this.storage, `imagen/` + name);
     uploadBytes(imgRef, file)
       .then(response => { this.getImages() })
@@ -17,7 +17,7 @@ export class ImageService {
   }
 
   getImages() {
-    const imagesRef = ref(this.storage, 'imagen')
+    const imagesRef = ref(this.storage, 'imagen/')
     list(imagesRef)
       .then(async response => {
         for (let item of response.items) {
