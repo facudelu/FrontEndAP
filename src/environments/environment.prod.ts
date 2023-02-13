@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '1017875524674',
   },
   production: true,
-  URL:'https://backendfacudelu.herokuapp.com/'
+  URL:'https://backend-facudelu.onrender.com/'
 };
